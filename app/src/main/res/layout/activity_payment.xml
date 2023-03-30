@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/arrow_back" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/poppins"
+            android:text="Payment Details"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Bank"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextBank"
+            android:layout_margin="3dp"
+            android:background="@drawable/back_edittext"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter bank name"
+        android:padding="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/back_edittext"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter your name"
+            android:padding="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Account no."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittextAccountNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/back_edittext"
+            android:fontFamily="@font/poppins"
+            android:hint="e,g IBN0076372373673639879"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:drawablePadding="20dp"
+            android:padding="15dp"
+            android:text="Finish"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

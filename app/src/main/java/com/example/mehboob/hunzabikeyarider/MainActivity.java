@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
                         binding.btnStart.setOnClickListener(v -> {
                             // Intent intent = new Intent(BoardingActivity.this, LoginActivity.class);
-                            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                            startActivity(new Intent(MainActivity.this, SignUpActivity.class));
                         });
                 }
 

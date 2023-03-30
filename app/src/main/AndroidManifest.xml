@@ -12,10 +12,31 @@
         android:theme="@style/Theme.Hunzabikeyarider"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CustumTheme"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CustumTheme" />
+        <activity
+            android:name=".DacumentsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CustumTheme"></activity>
+        <activity
+            android:name=".AddVehicalActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CustumTheme" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CustumTheme"></activity>
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CustumTheme" />
+        <activity
+            android:name=".DashboardActivity"
             android:exported="true"
             android:theme="@style/Theme.CustumTheme">
             <intent-filter>
@@ -24,6 +45,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CustumTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CustumTheme"></activity>
     </application>
 
 </manifest>
